@@ -24,6 +24,7 @@ class NeuralNetwork:
 
         # feed forward from input to hidden
         inputs = np.array(vector)
+        # change inputs from horizontal form to vertical form
         inputs = inputs.reshape(2, 1)
         print('input vector: ', inputs)
         hidden_weights = np.array(self.weights_input_to_hidden)
