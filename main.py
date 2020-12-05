@@ -1,0 +1,3 @@
+import NeuralNetwork
+
+temp = NeuralNetwork()
