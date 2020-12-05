@@ -24,6 +24,7 @@ class NeuralNetwork:
 
         # feed forward from input to hidden
         inputs = np.array(vector)
+        inputs = inputs.reshape(2, 1)
         print('input vector: ', inputs)
         hidden_weights = np.array(self.weights_input_to_hidden)
         print('hidden weights: ', hidden_weights)
@@ -54,5 +55,5 @@ class NeuralNetwork:
 
 
 temp = NeuralNetwork()
-v = [[1], [0]]
+v = [1, 2]
 temp.feedForward(v)
