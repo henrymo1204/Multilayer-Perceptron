@@ -53,7 +53,6 @@ class NeuralNetwork:
 
     # def test(self):  # testing algorithm
 
-
-temp = NeuralNetwork()
-v = [1, 2]
-temp.feedForward(v)
+#  temp = NeuralNetwork()
+#  v = [1, 2]
+#  temp.feedForward(v)
