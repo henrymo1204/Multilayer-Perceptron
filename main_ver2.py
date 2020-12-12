@@ -1,5 +1,5 @@
 import random
-import NeuralNetwork as nn
+import NeuralNetwork_ver2 as nn
 import re
 from sklearn.model_selection import train_test_split
 
@@ -35,4 +35,4 @@ for i in range(100):
     print(i)
 
 for k in testing_set:
-    print(k[0], '===============', neuralNetwork.test(k[1]))
+    print(k[0], '=====', neuralNetwork.test(k[1]))
