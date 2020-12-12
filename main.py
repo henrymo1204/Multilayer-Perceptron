@@ -9,11 +9,9 @@ with open(file_name) as file:
     line = file.readline()
     while line:
         split_line = [val.strip(' ') for val in re.split(r'[()]', line.strip('(' + ')' + '\n'))]
+        feature_vector = list(map(int, split_line[1].split(' ')))
+        label_val = int(split_line[2])
 
-        feature_vector = list(map(int, split_line[1].split(' ')))  # Convert string values to integer values
-        label_val = int(split_line[2])  # Save Class Value
-
-        # Append new Node object w/ label value, and the feature vector values
         test.append((label_val, feature_vector))
 
         line = file.readline()
