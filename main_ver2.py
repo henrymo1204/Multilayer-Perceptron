@@ -28,11 +28,12 @@ for x in testing_set:
 
 neuralNetwork = nn.NeuralNetwork()
 
-for i in range(100):
+for i in range(10000):
     random.shuffle(training_set)
     for j in training_set:
         neuralNetwork.train(j[1], j[0])
     print(i)
 
 for k in testing_set:
-    print(k[0], '=====', neuralNetwork.test(k[1]))
+    temp = list(neuralNetwork.test(k[1]))
+    print(k[0], '=====', temp, '=====', temp.index(max(temp)))
